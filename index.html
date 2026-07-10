@@ -978,6 +978,15 @@
     </div>
   </footer>
 
+  <!-- Back to Top Button -->
+  <button id="back-to-top"
+    class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-primary-600 hover:bg-primary-700 text-white shadow-lg shadow-primary-600/30 flex items-center justify-center opacity-0 invisible translate-y-4 transition-all duration-300"
+    aria-label="Back to top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
   <!-- Scripts -->
   <script>
     // Navbar shrink effect
@@ -994,6 +1003,18 @@
         navInner.style.height = '80px';
         navLogo.style.height = '2.5rem';
       }
+      // Back to top visibility
+      var btn = document.getElementById('back-to-top');
+      if (window.scrollY > 400) {
+        btn.style.opacity = '1'; btn.style.visibility = 'visible'; btn.style.transform = 'translateY(0)';
+      } else {
+        btn.style.opacity = '0'; btn.style.visibility = 'hidden'; btn.style.transform = 'translateY(1rem)';
+      }
+    });
+
+    // Back to top click
+    document.getElementById('back-to-top').addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
     // Mobile menu
