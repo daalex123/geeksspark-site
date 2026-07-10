@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeeksSpark - Specialised Web Solutions | Custom Web Development & Digital Strategy</title>
+  <meta name="title" content="GeeksSpark - Specialised Web Solutions | Custom Web Development & Digital Strategy" />
+  <meta name="description"
+    content="GeeksSpark is a specialised web solutions company delivering custom web development, scalable applications, and digital strategy. We craft high-performance websites and web applications that drive measurable business results." />
+  <meta name="keywords"
+    content="web solutions company, custom web development, specialised web solutions, web application development, digital strategy, e-commerce solutions, responsive web design, SEO optimization, full stack development, enterprise web solutions" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="language" content="English" />
+  <meta name="author" content="GeeksSpark" />
+  <meta name="google-site-verification" content="your-google-verification-code" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://geeksspark.com/" />
+  <meta property="og:title"
+    content="GeeksSpark - Specialised Web Solutions | Custom Web Development & Digital Strategy" />
+  <meta property="og:description"
+    content="Specialised web solutions company delivering custom web development, scalable applications, and digital strategy that drives measurable business results." />
+  <meta property="og:image" content="https://geeksspark.com/og-image.jpg" />
+  <meta property="og:site_name" content="GeeksSpark" />
+
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://geeksspark.com/" />
+  <meta property="twitter:title" content="GeeksSpark - Specialised Web Solutions Company" />
+  <meta property="twitter:description"
+    content="Specialised web solutions company delivering custom development, scalable applications, and digital strategy." />
+  <meta property="twitter:image" content="https://geeksspark.com/og-image.jpg" />
+
+  <meta name="theme-color" content="#020617" />
+  <link rel="canonical" href="https://geeksspark.com/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3N91PFB15L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag () { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-3N91PFB15L');
+  </script>
+
+  <!-- GTM -->
+  <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-KQ3735MG');</script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- EmailJS & GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: { 50: '#f0f4ff', 100: '#dbe4ff', 200: '#bac8ff', 300: '#91a7ff', 400: '#748ffc', 500: '#5c7cfa', 600: '#4c6ef5', 700: '#4263eb', 800: '#3b5bdb', 900: '#364fc7' },
+            accent: { 50: '#fff4e6', 100: '#ffe8cc', 200: '#ffd8a8', 300: '#ffc078', 400: '#ffa94d', 500: '#ff922b', 600: '#fd7e14', 700: '#e8590c', 800: '#d9480f', 900: '#c92a2a' },
+            surface: { 50: '#f8fafc', 100: '#f1f5f9', 800: '#1e293b', 900: '#0f172a', 950: '#020617' },
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-surface-950 text-gray-100 antialiased font-sans">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQ3735MG" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" id="navbar">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-500" id="nav-container">
+      <nav class="flex justify-between items-center transition-all duration-500" id="nav-inner" style="height:80px;">
+        <a href="#home" class="flex items-center"><img src="images/logo-wite.png" alt="GeeksSpark"
+            class="h-10 w-auto object-contain transition-all duration-500" id="nav-logo"></a>
+
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="#home"
+            class="nav-link px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">Home</a>
+          <a href="#solutions"
+            class="nav-link px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">Solutions</a>
+          <a href="#process"
+            class="nav-link px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">Process</a>
+          <a href="#portfolio"
+            class="nav-link px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">Work</a>
+          <a href="#about"
+            class="nav-link px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">About</a>
+          <a href="#contact"
+            class="nav-link px-4 py-2 text-sm font-medium text-gray-300 hover:text-white rounded-lg hover:bg-white/5 transition-all">Contact</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <a href="#contact"
+            class="hidden sm:inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-lg shadow-lg shadow-primary-600/25 hover:shadow-primary-600/40 transition-all">
+            Start a Project <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+          <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-white/5"
+            aria-label="Menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden hidden bg-surface-900/95 backdrop-blur-xl border-t border-white/5">
+      <div class="max-w-[1400px] mx-auto px-4 py-6 space-y-2">
+        <a href="#home" class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">Home</a>
+        <a href="#solutions"
+          class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">Solutions</a>
+        <a href="#process"
+          class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">Process</a>
+        <a href="#portfolio" class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">Work</a>
+        <a href="#about" class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">About</a>
+        <a href="#contact"
+          class="block px-4 py-3 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg">Contact</a>
+        <a href="#contact"
+          class="block px-4 py-3 mt-4 text-center text-white bg-primary-600 rounded-lg font-semibold">Start a
+          Project</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="relative h-screen flex items-center overflow-hidden">
+      <!-- Full-width Background Slider -->
+      <div class="absolute inset-0 z-0" id="hero-slider">
+        <div class="slider-slide absolute inset-0" style="opacity:1;">
+          <img src="images/slider1.jpeg" alt="Digital infrastructure and network technology"
+            class="w-full h-full object-cover">
+        </div>
+        <div class="slider-slide absolute inset-0" style="opacity:0;">
+          <img src="images/slider2.jpeg" alt="Cloud solutions and digital transformation team"
+            class="w-full h-full object-cover">
+        </div>
+      </div>
+      <!-- Dark overlay for text readability -->
+      <div class="absolute inset-0 z-[1] bg-gradient-to-r from-black/80 via-black/60 to-black/30"></div>
+      <div class="absolute inset-0 z-[1] bg-gradient-to-t from-black/70 via-transparent to-black/30"></div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 w-full px-6 sm:px-10 lg:px-16 xl:px-24">
+        <div class="max-w-3xl">
+          <div
+            class="inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/15 text-sm text-gray-300 mb-8 backdrop-blur-md">
+            <span class="w-2 h-2 bg-green-400 rounded-full mr-3 animate-pulse"></span>
+            Specialised Web Solutions Company
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.1] tracking-tight mb-6">
+            <span class="text-white">We build web solutions</span><br>
+            <span
+              class="bg-gradient-to-r from-primary-400 via-primary-500 to-accent-500 bg-clip-text text-transparent">that
+              scale your business</span>
+          </h1>
+
+          <p class="text-lg lg:text-xl text-gray-300 leading-relaxed max-w-2xl mb-10">
+            From custom web applications to e-commerce platforms, we deliver tailored digital solutions engineered for
+            performance, scalability, and measurable business growth.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 mb-12">
+            <a href="#contact"
+              class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-xl shadow-lg shadow-primary-600/25 hover:shadow-primary-600/40 hover:-translate-y-0.5 transition-all">
+              Discuss Your Project <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+            <a href="#portfolio"
+              class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/30 rounded-xl backdrop-blur-sm hover:-translate-y-0.5 transition-all">
+              View Our Work
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="flex flex-wrap gap-8 items-center pt-8 border-t border-white/10">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-white">99.9%</div>
+              <div class="text-xs text-gray-400 mt-1">Uptime</div>
+            </div>
+            <div class="w-px h-10 bg-white/15"></div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-white">5+</div>
+              <div class="text-xs text-gray-400 mt-1">Years Experience</div>
+            </div>
+            <div class="w-px h-10 bg-white/15"></div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-white">24/7</div>
+              <div class="text-xs text-gray-400 mt-1">Support</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider Indicators -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
+        <button class="slider-dot w-10 h-1.5 rounded-full transition-all duration-300" data-index="0"></button>
+        <button class="slider-dot w-10 h-1.5 rounded-full transition-all duration-300" data-index="1"></button>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 right-8 z-20 hidden lg:flex flex-col items-center gap-2 text-white/50 text-xs">
+        <span class="tracking-widest uppercase" style="writing-mode:vertical-rl;">Scroll</span>
+        <div class="w-px h-10 bg-white/30 animate-pulse"></div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section id="solutions" class="py-24 lg:py-32 relative">
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-16">
+          <p class="text-sm font-semibold text-primary-400 uppercase tracking-wider mb-4">What We Do</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Specialised web solutions for modern
+            businesses</h2>
+          <p class="text-lg text-gray-400 leading-relaxed">We combine technical expertise with strategic thinking to
+            deliver web solutions that solve real business problems and create lasting competitive advantages.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="group p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-primary-500/30 hover:bg-white/[0.04] transition-all duration-300">
+            <div
+              class="w-12 h-12 rounded-xl bg-primary-500/10 flex items-center justify-center mb-6 group-hover:bg-primary-500/20 transition-colors">
+              <i class="fas fa-globe text-primary-400 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Custom Websites</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">High-performance, responsive websites designed to convert
+              visitors into customers with modern UI/UX principles.</p>
+            <ul class="space-y-2 text-sm text-gray-500">
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Responsive & Mobile-First</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>SEO Optimized</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Lightning Fast</li>
+            </ul>
+          </div>
+
+          <div
+            class="group p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-primary-500/30 hover:bg-white/[0.04] transition-all duration-300">
+            <div
+              class="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-6 group-hover:bg-accent-500/20 transition-colors">
+              <i class="fas fa-shopping-bag text-accent-400 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">E-Commerce Solutions</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">End-to-end e-commerce platforms with secure payments,
+              inventory management, and optimised checkout flows.</p>
+            <ul class="space-y-2 text-sm text-gray-500">
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Payment Integration</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Inventory Management</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Analytics & Reporting</li>
+            </ul>
+          </div>
+
+          <div
+            class="group p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-primary-500/30 hover:bg-white/[0.04] transition-all duration-300">
+            <div
+              class="w-12 h-12 rounded-xl bg-primary-500/10 flex items-center justify-center mb-6 group-hover:bg-primary-500/20 transition-colors">
+              <i class="fas fa-layer-group text-primary-400 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Web Applications</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">Scalable, secure web applications built with modern frameworks
+              and cloud-native architecture.</p>
+            <ul class="space-y-2 text-sm text-gray-500">
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>React / Next.js / Vue</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Node.js / Laravel / Python</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Cloud Infrastructure</li>
+            </ul>
+          </div>
+
+          <div
+            class="group p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-primary-500/30 hover:bg-white/[0.04] transition-all duration-300">
+            <div
+              class="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-6 group-hover:bg-accent-500/20 transition-colors">
+              <i class="fas fa-robot text-accent-400 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Automation & Integration</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">Streamline operations with custom automation workflows and
+              seamless third-party integrations.</p>
+            <ul class="space-y-2 text-sm text-gray-500">
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Workflow Automation</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>API Development</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>CRM & ERP Integration</li>
+            </ul>
+          </div>
+
+          <div
+            class="group p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-primary-500/30 hover:bg-white/[0.04] transition-all duration-300">
+            <div
+              class="w-12 h-12 rounded-xl bg-primary-500/10 flex items-center justify-center mb-6 group-hover:bg-primary-500/20 transition-colors">
+              <i class="fas fa-chart-line text-primary-400 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Digital Strategy</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">Strategic consulting to align your digital presence with
+              business objectives and market opportunities.</p>
+            <ul class="space-y-2 text-sm text-gray-500">
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Technology Roadmap</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Conversion Optimization</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-primary-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Growth Planning</li>
+            </ul>
+          </div>
+
+          <div
+            class="group p-8 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-primary-500/30 hover:bg-white/[0.04] transition-all duration-300">
+            <div
+              class="w-12 h-12 rounded-xl bg-accent-500/10 flex items-center justify-center mb-6 group-hover:bg-accent-500/20 transition-colors">
+              <i class="fas fa-shield-alt text-accent-400 text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">Maintenance & Support</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">Ongoing technical support, security updates, performance
+              monitoring, and continuous improvement.</p>
+            <ul class="space-y-2 text-sm text-gray-500">
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Security Monitoring</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>Performance Optimization</li>
+              <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-accent-400" fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>24/7 Uptime Guarantee</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="py-24 lg:py-32 relative border-t border-white/5">
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-16">
+          <p class="text-sm font-semibold text-primary-400 uppercase tracking-wider mb-4">Our Process</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">How we deliver results</h2>
+          <p class="text-lg text-gray-400 leading-relaxed">A proven methodology that ensures every project is delivered
+            on time, on budget, and exceeds expectations.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="relative">
+            <div class="text-6xl font-black text-white/5 absolute -top-4 -left-2">01</div>
+            <div class="relative pt-8">
+              <div class="w-10 h-10 rounded-lg bg-primary-500/10 flex items-center justify-center mb-4"><i
+                  class="fas fa-search text-primary-400"></i></div>
+              <h3 class="text-lg font-bold text-white mb-2">Discovery</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">Deep dive into your business goals, target audience, and
+                technical requirements to define the perfect solution.</p>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="text-6xl font-black text-white/5 absolute -top-4 -left-2">02</div>
+            <div class="relative pt-8">
+              <div class="w-10 h-10 rounded-lg bg-primary-500/10 flex items-center justify-center mb-4"><i
+                  class="fas fa-pencil-ruler text-primary-400"></i></div>
+              <h3 class="text-lg font-bold text-white mb-2">Design & Architect</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">Wireframes, prototypes, and system architecture designed
+                for scalability and exceptional user experience.</p>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="text-6xl font-black text-white/5 absolute -top-4 -left-2">03</div>
+            <div class="relative pt-8">
+              <div class="w-10 h-10 rounded-lg bg-primary-500/10 flex items-center justify-center mb-4"><i
+                  class="fas fa-code text-primary-400"></i></div>
+              <h3 class="text-lg font-bold text-white mb-2">Develop & Test</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">Agile development with continuous testing, code reviews,
+                and quality assurance at every stage.</p>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="text-6xl font-black text-white/5 absolute -top-4 -left-2">04</div>
+            <div class="relative pt-8">
+              <div class="w-10 h-10 rounded-lg bg-primary-500/10 flex items-center justify-center mb-4"><i
+                  class="fas fa-rocket text-primary-400"></i></div>
+              <h3 class="text-lg font-bold text-white mb-2">Launch & Grow</h3>
+              <p class="text-gray-400 text-sm leading-relaxed">Seamless deployment, performance monitoring, and ongoing
+                optimization to ensure continued success.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-24 lg:py-32 relative border-t border-white/5">
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-16">
+          <p class="text-sm font-semibold text-primary-400 uppercase tracking-wider mb-4">Our Work</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Selected projects</h2>
+          <p class="text-lg text-gray-400 leading-relaxed">A showcase of web solutions we've delivered for clients
+            across diverse industries.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <a href="https://www.infinitipack.com/" target="_blank"
+            class="group block rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative overflow-hidden aspect-[16/10]"><img src="images/infiniti-packaging.jpg"
+                alt="Infiniti Packaging"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2"><span
+                  class="text-xs font-medium text-accent-400 uppercase tracking-wider">Packaging</span><svg
+                  class="w-4 h-4 text-gray-500 group-hover:text-primary-400 transition-colors" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></div>
+              <h3 class="text-lg font-bold text-white mb-1">Infiniti Packaging</h3>
+              <p class="text-sm text-gray-400">Premium packaging solutions company website</p>
+            </div>
+          </a>
+          <a href="https://www.flamebackecolodge.com/" target="_blank"
+            class="group block rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative overflow-hidden aspect-[16/10]"><img src="images/geeksspark-6.png"
+                alt="Flameback Eco Lodge"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2"><span
+                  class="text-xs font-medium text-primary-400 uppercase tracking-wider">Eco Tourism</span><svg
+                  class="w-4 h-4 text-gray-500 group-hover:text-primary-400 transition-colors" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></div>
+              <h3 class="text-lg font-bold text-white mb-1">Flameback Eco Lodge</h3>
+              <p class="text-sm text-gray-400">Luxury eco-tourism website with booking system</p>
+            </div>
+          </a>
+
+          <a href="https://embassy.globalpathsolutions.com.au/" target="_blank"
+            class="group block rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative overflow-hidden aspect-[16/10]"><img src="images/geeksspark-9.png"
+                alt="Embassy Cocktail Bar"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2"><span
+                  class="text-xs font-medium text-primary-400 uppercase tracking-wider">Hospitality</span><svg
+                  class="w-4 h-4 text-gray-500 group-hover:text-primary-400 transition-colors" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></div>
+              <h3 class="text-lg font-bold text-white mb-1">Embassy Cocktail Bar</h3>
+              <p class="text-sm text-gray-400">Bar & nightclub with events and booking</p>
+            </div>
+          </a>
+
+          <a href="https://www.bloomroomcbr.com.au" target="_blank"
+            class="group block rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative overflow-hidden aspect-[16/10]"><img src="images/bloom-room.jpg" alt="Bloom Room"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2"><span
+                  class="text-xs font-medium text-accent-400 uppercase tracking-wider">Restaurant</span><svg
+                  class="w-4 h-4 text-gray-500 group-hover:text-primary-400 transition-colors" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></div>
+              <h3 class="text-lg font-bold text-white mb-1">Bloom Room</h3>
+              <p class="text-sm text-gray-400">Modern restaurant with online booking</p>
+            </div>
+          </a>
+
+          <a href="https://www.sustreia.com/" target="_blank"
+            class="group block rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative overflow-hidden aspect-[16/10]"><img src="images/geeksspark-3.png" alt="Sustreia"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2"><span
+                  class="text-xs font-medium text-accent-400 uppercase tracking-wider">Construction</span><svg
+                  class="w-4 h-4 text-gray-500 group-hover:text-primary-400 transition-colors" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></div>
+              <h3 class="text-lg font-bold text-white mb-1">Sustreia</h3>
+              <p class="text-sm text-gray-400">Sustainable construction company platform</p>
+            </div>
+          </a>
+
+          <a href="https://eminenttea.com/" target="_blank"
+            class="group block rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative overflow-hidden aspect-[16/10]"><img src="images/geeksspark-7.png" alt="Eminent Tea"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2"><span
+                  class="text-xs font-medium text-primary-400 uppercase tracking-wider">E-Commerce</span><svg
+                  class="w-4 h-4 text-gray-500 group-hover:text-primary-400 transition-colors" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></div>
+              <h3 class="text-lg font-bold text-white mb-1">Eminent Tea</h3>
+              <p class="text-sm text-gray-400">Premium Ceylon tea e-commerce platform</p>
+            </div>
+          </a>
+
+          <a href="https://www.amithgems.com/" target="_blank"
+            class="group block rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative overflow-hidden aspect-[16/10]"><img src="images/geeksspark-8.png" alt="Amith Gems"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2"><span
+                  class="text-xs font-medium text-accent-400 uppercase tracking-wider">Jewellery</span><svg
+                  class="w-4 h-4 text-gray-500 group-hover:text-primary-400 transition-colors" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></div>
+              <h3 class="text-lg font-bold text-white mb-1">Amith Gems</h3>
+              <p class="text-sm text-gray-400">Luxury gemstones showcase & catalogue</p>
+            </div>
+          </a>
+
+          <a href="https://www.australiagateway.com/" target="_blank"
+            class="group block rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative overflow-hidden aspect-[16/10]"><img src="images/geeksspark-5.png"
+                alt="Australia Gateway"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2"><span
+                  class="text-xs font-medium text-primary-400 uppercase tracking-wider">Travel</span><svg
+                  class="w-4 h-4 text-gray-500 group-hover:text-primary-400 transition-colors" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></div>
+              <h3 class="text-lg font-bold text-white mb-1">Australia Gateway</h3>
+              <p class="text-sm text-gray-400">Travel & migration services platform</p>
+            </div>
+          </a>
+
+          <a href="https://www.fairfieldslawyers.com/" target="_blank"
+            class="group block rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative overflow-hidden aspect-[16/10]"><img src="images/geeksspark-2.png"
+                alt="Fairfields Lawyers"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2"><span
+                  class="text-xs font-medium text-accent-400 uppercase tracking-wider">Legal</span><svg
+                  class="w-4 h-4 text-gray-500 group-hover:text-primary-400 transition-colors" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></div>
+              <h3 class="text-lg font-bold text-white mb-1">Fairfields Lawyers</h3>
+              <p class="text-sm text-gray-400">Professional law firm website</p>
+            </div>
+          </a>
+
+          <a href="https://maga.lk/" target="_blank"
+            class="group block rounded-2xl overflow-hidden bg-white/[0.02] border border-white/5 hover:border-primary-500/30 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative overflow-hidden aspect-[16/10]"><img src="images/geeksspark-1.png" alt="Maga.lk"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-surface-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2"><span
+                  class="text-xs font-medium text-primary-400 uppercase tracking-wider">Construction</span><svg
+                  class="w-4 h-4 text-gray-500 group-hover:text-primary-400 transition-colors" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg></div>
+              <h3 class="text-lg font-bold text-white mb-1">Maga.lk</h3>
+              <p class="text-sm text-gray-400">Construction company digital presence</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-24 lg:py-32 relative border-t border-white/5">
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="text-sm font-semibold text-primary-400 uppercase tracking-wider mb-4">About GeeksSpark</p>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">A specialised team focused on web
+              excellence</h2>
+            <p class="text-lg text-gray-400 leading-relaxed mb-6">We're not a generic agency. GeeksSpark is a
+              specialised web solutions company that focuses exclusively on building high-quality digital products. Our
+              team combines deep technical expertise with strategic business acumen to deliver solutions that make a
+              real impact.</p>
+            <p class="text-lg text-gray-400 leading-relaxed mb-8">Every project we take on receives our full attention —
+              from the initial discovery phase through to launch and beyond. We believe in long-term partnerships, not
+              one-off transactions.</p>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div class="flex items-start space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-primary-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="fas fa-bullseye text-primary-400 text-sm"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">Results-Driven</h4>
+                  <p class="text-sm text-gray-500">Every decision optimised for your business outcomes</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-primary-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="fas fa-handshake text-primary-400 text-sm"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">True Partners</h4>
+                  <p class="text-sm text-gray-500">We invest in your success as if it were our own</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-primary-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="fas fa-bolt text-primary-400 text-sm"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">Modern Stack</h4>
+                  <p class="text-sm text-gray-500">Cutting-edge technologies for future-proof solutions</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-primary-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <i class="fas fa-lock text-primary-400 text-sm"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-white text-sm mb-1">Security First</h4>
+                  <p class="text-sm text-gray-500">Enterprise-grade security in every solution</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -inset-4 bg-gradient-to-r from-primary-600/10 to-accent-600/10 rounded-3xl blur-2xl">
+            </div>
+            <div class="relative bg-white/[0.02] border border-white/5 rounded-2xl p-8">
+              <h3 class="text-lg font-bold text-white mb-6">Our Technology Stack</h3>
+              <div class="grid grid-cols-3 gap-4">
+                <div class="text-center p-4 rounded-xl bg-white/[0.03] border border-white/5"><i
+                    class="fab fa-react text-2xl text-[#61DAFB] mb-2"></i>
+                  <p class="text-xs text-gray-400">React</p>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-white/[0.03] border border-white/5"><i
+                    class="fab fa-vuejs text-2xl text-[#4FC08D] mb-2"></i>
+                  <p class="text-xs text-gray-400">Vue.js</p>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-white/[0.03] border border-white/5"><i
+                    class="fab fa-node-js text-2xl text-[#339933] mb-2"></i>
+                  <p class="text-xs text-gray-400">Node.js</p>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-white/[0.03] border border-white/5"><i
+                    class="fab fa-laravel text-2xl text-[#FF2D20] mb-2"></i>
+                  <p class="text-xs text-gray-400">Laravel</p>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-white/[0.03] border border-white/5"><i
+                    class="fab fa-python text-2xl text-[#3776AB] mb-2"></i>
+                  <p class="text-xs text-gray-400">Python</p>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-white/[0.03] border border-white/5"><i
+                    class="fab fa-aws text-2xl text-[#FF9900] mb-2"></i>
+                  <p class="text-xs text-gray-400">AWS</p>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-white/[0.03] border border-white/5"><i
+                    class="fab fa-docker text-2xl text-[#2496ED] mb-2"></i>
+                  <p class="text-xs text-gray-400">Docker</p>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-white/[0.03] border border-white/5"><i
+                    class="fab fa-wordpress text-2xl text-[#21759B] mb-2"></i>
+                  <p class="text-xs text-gray-400">WordPress</p>
+                </div>
+                <div class="text-center p-4 rounded-xl bg-white/[0.03] border border-white/5"><i
+                    class="fab fa-shopify text-2xl text-[#96BF48] mb-2"></i>
+                  <p class="text-xs text-gray-400">Shopify</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 lg:py-32 relative border-t border-white/5">
+      <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-5 gap-16">
+          <div class="lg:col-span-2">
+            <p class="text-sm font-semibold text-primary-400 uppercase tracking-wider mb-4">Get in Touch</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Let's build something great together</h2>
+            <p class="text-lg text-gray-400 leading-relaxed mb-10">Have a project in mind? Tell us about it. We'll
+              respond within 24 hours with a tailored proposal.</p>
+
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div class="w-11 h-11 rounded-xl bg-primary-500/10 flex items-center justify-center flex-shrink-0"><i
+                    class="fas fa-envelope text-primary-400"></i></div>
+                <div>
+                  <p class="text-sm text-gray-500">Email</p><a href="mailto:info@geeksspark.site"
+                    class="text-white font-medium hover:text-primary-400 transition-colors">info@geeksspark.site</a>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-11 h-11 rounded-xl bg-primary-500/10 flex items-center justify-center flex-shrink-0"><i
+                    class="fas fa-phone text-primary-400"></i></div>
+                <div>
+                  <p class="text-sm text-gray-500">Phone / WhatsApp</p><a href="tel:+94777444690"
+                    class="text-white font-medium hover:text-primary-400 transition-colors">+94 777-444-690</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-10 pt-8 border-t border-white/5">
+              <p class="text-sm text-gray-500 mb-4">Follow us</p>
+              <div class="flex space-x-3">
+                <a href="https://facebook.com/geeksspark" target="_blank"
+                  class="w-10 h-10 rounded-xl bg-white/[0.03] border border-white/5 flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary-600 hover:border-primary-600 transition-all"
+                  aria-label="Facebook"><i class="fab fa-facebook-f text-sm"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-3">
+            <div class="bg-white/[0.02] border border-white/5 rounded-2xl p-8">
+              <div id="form-messages" class="hidden mb-6">
+                <div id="success-message"
+                  class="hidden p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-green-400 text-sm"><i
+                    class="fas fa-check-circle mr-2"></i>Thank you! We'll get back to you within 24 hours.</div>
+                <div id="error-message"
+                  class="hidden p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 text-sm"><i
+                    class="fas fa-exclamation-circle mr-2"></i>Something went wrong. Please try again or email us
+                  directly.</div>
+              </div>
+
+              <form id="contact-form" class="space-y-6">
+                <div class="grid sm:grid-cols-2 gap-6">
+                  <div><label for="name" class="block text-sm font-medium text-gray-300 mb-2">Full Name <span
+                        class="text-red-400">*</span></label><input type="text" id="name" name="name" required
+                      placeholder="Your name"
+                      class="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all">
+                  </div>
+                  <div><label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email <span
+                        class="text-red-400">*</span></label><input type="email" id="email" name="email" required
+                      placeholder="you@company.com"
+                      class="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all">
+                  </div>
+                </div>
+                <div><label for="company" class="block text-sm font-medium text-gray-300 mb-2">Company</label><input
+                    type="text" id="company" name="company" placeholder="Your company"
+                    class="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all">
+                </div>
+                <div><label for="service" class="block text-sm font-medium text-gray-300 mb-2">What do you
+                    need?</label><select id="service" name="service"
+                    class="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-xl text-white focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all">
+                    <option value="" class="bg-surface-900">Select a service</option>
+                    <option value="custom-website" class="bg-surface-900">Custom Website</option>
+                    <option value="e-commerce" class="bg-surface-900">E-Commerce Solution</option>
+                    <option value="web-application" class="bg-surface-900">Web Application</option>
+                    <option value="automation" class="bg-surface-900">Automation & Integration</option>
+                    <option value="consultation" class="bg-surface-900">Digital Strategy Consultation</option>
+                    <option value="other" class="bg-surface-900">Other</option>
+                  </select></div>
+                <div><label for="message" class="block text-sm font-medium text-gray-300 mb-2">Project Details <span
+                      class="text-red-400">*</span></label><textarea id="message" name="message" rows="5" required
+                    placeholder="Tell us about your project, goals, and timeline..."
+                    class="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-all resize-none"></textarea>
+                </div>
+                <button type="submit"
+                  class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-xl shadow-lg shadow-primary-600/25 hover:shadow-primary-600/40 transition-all"><i
+                    class="fas fa-paper-plane mr-3"></i>Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/5 bg-surface-950">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div class="lg:col-span-2">
+          <img src="images/logo-wite.png" alt="GeeksSpark" class="h-10 w-auto object-contain mb-6">
+          <p class="text-gray-400 leading-relaxed max-w-md mb-6">A specialised web solutions company focused on
+            delivering high-quality digital products that drive real business results.</p>
+          <a href="https://facebook.com/geeksspark" target="_blank"
+            class="w-9 h-9 rounded-lg bg-white/[0.03] border border-white/5 inline-flex items-center justify-center text-gray-400 hover:text-white hover:bg-primary-600 hover:border-primary-600 transition-all"
+            aria-label="Facebook"><i class="fab fa-facebook-f text-sm"></i></a>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Solutions</h4>
+          <ul class="space-y-3">
+            <li><a href="#solutions" class="text-sm text-gray-400 hover:text-white transition-colors">Custom
+                Websites</a></li>
+            <li><a href="#solutions" class="text-sm text-gray-400 hover:text-white transition-colors">E-Commerce</a>
+            </li>
+            <li><a href="#solutions" class="text-sm text-gray-400 hover:text-white transition-colors">Web
+                Applications</a></li>
+            <li><a href="#solutions" class="text-sm text-gray-400 hover:text-white transition-colors">Automation</a>
+            </li>
+            <li><a href="#solutions" class="text-sm text-gray-400 hover:text-white transition-colors">Digital
+                Strategy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Company</h4>
+          <ul class="space-y-3">
+            <li><a href="#about" class="text-sm text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#portfolio" class="text-sm text-gray-400 hover:text-white transition-colors">Our Work</a></li>
+            <li><a href="#process" class="text-sm text-gray-400 hover:text-white transition-colors">Process</a></li>
+            <li><a href="#contact" class="text-sm text-gray-400 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-gray-500">&copy; 2025 GeeksSpark. All rights reserved.</p>
+        <p class="text-sm text-gray-600">Specialised Web Solutions Company</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Navbar shrink effect
+    const navbar = document.getElementById('navbar');
+    const navInner = document.getElementById('nav-inner');
+    const navLogo = document.getElementById('nav-logo');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('bg-surface-950/90', 'backdrop-blur-xl', 'border-b', 'border-white/5', 'shadow-lg', 'shadow-black/20');
+        navInner.style.height = '64px';
+        navLogo.style.height = '2rem';
+      } else {
+        navbar.classList.remove('bg-surface-950/90', 'backdrop-blur-xl', 'border-b', 'border-white/5', 'shadow-lg', 'shadow-black/20');
+        navInner.style.height = '80px';
+        navLogo.style.height = '2.5rem';
+      }
+    });
+
+    // Mobile menu
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        const t = document.querySelector(this.getAttribute('href'));
+        if (t) { t.scrollIntoView({ behavior: 'smooth', block: 'start' }); mobileMenu.classList.add('hidden'); }
+      });
+    });
+
+    // GSAP Reveal Animations
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hero entrance animation
+    var heroTL = gsap.timeline({ delay: 0.3 });
+    heroTL
+      .from('#home .inline-flex', { y: 30, opacity: 0, duration: 0.6, ease: 'power3.out' })
+      .from('#home h1 span', { y: 60, opacity: 0, duration: 0.8, stagger: 0.15, ease: 'power3.out' }, '-=0.3')
+      .from('#home p', { y: 40, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.4')
+      .from('#home .flex-col a, #home .flex-row a', { y: 30, opacity: 0, duration: 0.5, stagger: 0.1, ease: 'power3.out' }, '-=0.3')
+      .from('#home .flex-wrap > *', { y: 20, opacity: 0, duration: 0.4, stagger: 0.06, ease: 'power3.out' }, '-=0.2');
+
+    // Reveal from bottom (default)
+    gsap.utils.toArray('section:not(#home)').forEach(function(section) {
+      // Section headers
+      var headers = section.querySelectorAll('h2, .text-sm.font-semibold.text-primary-400');
+      if (headers.length) {
+        gsap.from(headers, {
+          scrollTrigger: { trigger: section, start: 'top 80%', toggleActions: 'play none none none' },
+          y: 50, opacity: 0, duration: 0.8, stagger: 0.1, ease: 'power3.out'
+        });
+      }
+
+      // Section description paragraphs
+      var desc = section.querySelectorAll(':scope > div > div > p, :scope > div > p');
+      if (desc.length) {
+        gsap.from(desc, {
+          scrollTrigger: { trigger: section, start: 'top 78%', toggleActions: 'play none none none' },
+          y: 40, opacity: 0, duration: 0.7, delay: 0.15, stagger: 0.08, ease: 'power3.out'
+        });
+      }
+
+      // Grid / card items — reveal with stagger
+      var cards = section.querySelectorAll('.grid > *');
+      if (cards.length) {
+        gsap.from(cards, {
+          scrollTrigger: { trigger: cards[0], start: 'top 85%', toggleActions: 'play none none none' },
+          y: 60, opacity: 0, scale: 0.95, duration: 0.6, stagger: 0.08, ease: 'power3.out'
+        });
+      }
+    });
+
+    // Special: Process steps — slide in from left with clip
+    var processSteps = document.querySelectorAll('#process .grid > *');
+    if (processSteps.length) {
+      gsap.from(processSteps, {
+        scrollTrigger: { trigger: '#process .grid', start: 'top 82%', toggleActions: 'play none none none' },
+        x: -60, opacity: 0, duration: 0.7, stagger: 0.12, ease: 'power3.out'
+      });
+    }
+
+    // Special: About section — tech stack items pop in
+    var techItems = document.querySelectorAll('#about .flex-wrap > span, #about .flex-wrap > div');
+    if (techItems.length) {
+      gsap.from(techItems, {
+        scrollTrigger: { trigger: techItems[0], start: 'top 85%', toggleActions: 'play none none none' },
+        scale: 0, opacity: 0, duration: 0.4, stagger: 0.04, ease: 'back.out(1.7)'
+      });
+    }
+
+    // Special: Stats / counters — scale up
+    var stats = document.querySelectorAll('#home .flex-wrap .text-2xl');
+    if (stats.length) {
+      gsap.from(stats, {
+        scrollTrigger: { trigger: stats[0], start: 'top 90%', toggleActions: 'play none none none' },
+        scale: 0.5, opacity: 0, duration: 0.5, stagger: 0.1, ease: 'back.out(1.4)'
+      });
+    }
+
+    // Footer — slide up
+    var footerCols = document.querySelectorAll('footer .grid > div, footer > div > div');
+    if (footerCols.length) {
+      gsap.from(footerCols, {
+        scrollTrigger: { trigger: 'footer', start: 'top 90%', toggleActions: 'play none none none' },
+        y: 40, opacity: 0, duration: 0.6, stagger: 0.08, ease: 'power3.out'
+      });
+    }
+
+    // Hero Background Slider
+    (function () {
+      var heroSlider = document.getElementById('hero-slider');
+      if (!heroSlider) return;
+      var slides = heroSlider.querySelectorAll('.slider-slide');
+      var dots = document.querySelectorAll('.slider-dot');
+      var current = 0;
+      var total = slides.length;
+      var timer = null;
+
+      // Init
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.position = 'absolute';
+        slides[i].style.top = '0';
+        slides[i].style.left = '0';
+        slides[i].style.width = '100%';
+        slides[i].style.height = '100%';
+        slides[i].style.transition = 'opacity 1.5s ease-in-out';
+        slides[i].style.opacity = i === 0 ? '1' : '0';
+      }
+      for (var j = 0; j < dots.length; j++) {
+        dots[j].style.background = 'white';
+        dots[j].style.opacity = j === 0 ? '1' : '0.35';
+      }
+
+      function goTo (idx) {
+        current = ((idx % total) + total) % total;
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.opacity = i === current ? '1' : '0';
+        }
+        for (var j = 0; j < dots.length; j++) {
+          dots[j].style.opacity = j === current ? '1' : '0.35';
+        }
+      }
+
+      function next () { goTo(current + 1); }
+
+      function startAuto () {
+        if (timer) clearInterval(timer);
+        timer = setInterval(next, 5000);
+      }
+
+      for (var k = 0; k < dots.length; k++) {
+        dots[k].addEventListener('click', (function (idx) {
+          return function () { goTo(idx); startAuto(); };
+        })(k));
+      }
+
+      startAuto();
+    })();
+
+    // EmailJS
+    emailjs.init("oKlt_JzhqWFF86kSc");
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const company = document.getElementById('company').value.trim();
+        const service = document.getElementById('service').value;
+        const message = document.getElementById('message').value.trim();
+        if (!name || !email || !message) return;
+
+        const btn = contactForm.querySelector('button[type="submit"]');
+        const orig = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-3"></i>Sending...';
+        btn.disabled = true;
+
+        const msgs = document.getElementById('form-messages');
+        const ok = document.getElementById('success-message');
+        const err = document.getElementById('error-message');
+        msgs.classList.add('hidden'); ok.classList.add('hidden'); err.classList.add('hidden');
+
+        emailjs.send('service_o4s6fyd', 'template_vcbxgkv', { name, from_name: name, from_email: email, company: company || 'Not provided', service: service || 'Not specified', message, time: new Date().toLocaleString() })
+          .then(() => { msgs.classList.remove('hidden'); ok.classList.remove('hidden'); contactForm.reset(); btn.innerHTML = orig; btn.disabled = false; setTimeout(() => { msgs.classList.add('hidden'); ok.classList.add('hidden'); }, 5000); })
+          .catch(() => { msgs.classList.remove('hidden'); err.classList.remove('hidden'); btn.innerHTML = orig; btn.disabled = false; setTimeout(() => { msgs.classList.add('hidden'); err.classList.add('hidden'); }, 5000); });
+      });
+    }
+  </script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"GeeksSpark","alternateName":"GeeksSpark - Specialised Web Solutions","description":"GeeksSpark is a specialised web solutions company delivering custom web development, scalable applications, and digital strategy that drives measurable business results.","url":"https://geeksspark.com","logo":"https://geeksspark.com/images/logo-wite.png","foundingDate":"2020","slogan":"Specialised Web Solutions That Scale Your Business","knowsAbout":["Web Development","Custom Web Solutions","E-commerce","Web Applications","Digital Strategy","Automation"],"contactPoint":{"@type":"ContactPoint","telephone":"+94777444690","contactType":"sales","email":"info@geeksspark.site","availableLanguage":"English"},"sameAs":["https://facebook.com/geeksspark"],"service":[{"@type":"Service","name":"Custom Web Development","serviceType":"Web Development"},{"@type":"Service","name":"E-Commerce Solutions","serviceType":"E-commerce Development"},{"@type":"Service","name":"Web Application Development","serviceType":"Application Development"},{"@type":"Service","name":"Digital Strategy & Consulting","serviceType":"Consulting"}]}
+  </script>
+</body>
+
+</html>

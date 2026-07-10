@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" fill="none">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4c6ef5"/>
+      <stop offset="100%" style="stop-color:#748ffc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg1)"/>
+  <!-- Grid pattern -->
+  <g opacity="0.05" stroke="#fff" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/><line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="600"/><line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/><line x1="800" y1="0" x2="800" y2="600"/>
+    <line x1="1000" y1="0" x2="1000" y2="600"/>
+  </g>
+  <!-- Browser mockup -->
+  <rect x="150" y="80" width="900" height="440" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  <rect x="150" y="80" width="900" height="40" rx="12" fill="#334155"/>
+  <circle cx="180" cy="100" r="6" fill="#ef4444"/><circle cx="200" cy="100" r="6" fill="#eab308"/><circle cx="220" cy="100" r="6" fill="#22c55e"/>
+  <rect x="300" y="92" width="400" height="16" rx="8" fill="#1e293b"/>
+  <!-- Website content mockup -->
+  <rect x="180" y="140" width="200" height="20" rx="4" fill="url(#accent1)"/>
+  <rect x="180" y="175" width="500" height="14" rx="3" fill="#64748b"/>
+  <rect x="180" y="200" width="400" height="14" rx="3" fill="#475569"/>
+  <rect x="180" y="240" width="120" height="36" rx="8" fill="url(#accent1)"/>
+  <!-- Image placeholder -->
+  <rect x="180" y="300" width="250" height="180" rx="8" fill="#334155"/>
+  <rect x="450" y="300" width="250" height="180" rx="8" fill="#334155"/>
+  <rect x="720" y="300" width="250" height="180" rx="8" fill="#334155"/>
+  <!-- Glow effects -->
+  <circle cx="600" cy="300" r="200" fill="#4c6ef5" opacity="0.05"/>
+  <circle cx="900" cy="150" r="150" fill="#ff922b" opacity="0.03"/>
+</svg>
