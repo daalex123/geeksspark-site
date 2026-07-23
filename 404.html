@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found | GeeksSpark</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description"
+        content="The page you're looking for doesn't exist. Head back to the GeeksSpark homepage to explore our web development solutions." />
+    <link rel="canonical" href="https://geeksspark.com/404.html" />
+    <link rel="icon" href="images/logo-wite.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/logo-wite.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </noscript>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 50: '#fff1f0', 100: '#ffe1de', 200: '#ffc5c0', 300: '#ffa79f', 400: '#ff8a80', 500: '#ff6d65', 600: '#f5534a', 700: '#e23e35', 800: '#c22f27', 900: '#9c231d' },
+                        accent: { 50: '#fff4e6', 100: '#ffe8cc', 200: '#ffd8a8', 300: '#ffc078', 400: '#ffa94d', 500: '#ff922b', 600: '#fd7e14', 700: '#e8590c', 800: '#d9480f', 900: '#c92a2a' },
+                        surface: { 50: '#f8fafc', 100: '#f1f5f9', 800: '#1e293b', 900: '#0f172a', 950: '#020617' },
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-surface-950 text-gray-100 antialiased font-sans">
+    <div class="min-h-screen flex flex-col items-center justify-center px-6 text-center relative overflow-hidden">
+        <div
+            class="absolute inset-0 z-0 opacity-40 bg-gradient-to-br from-primary-900/20 via-transparent to-accent-900/10">
+        </div>
+
+        <div class="relative z-10 max-w-xl">
+            <a href="/" class="inline-flex items-center justify-center mb-10">
+                <img src="images/logo-wite.png" alt="GeeksSpark" width="2000" height="439"
+                    class="h-10 w-auto object-contain">
+            </a>
+
+            <p class="text-sm font-semibold text-primary-400 uppercase tracking-wider mb-4">Error 404</p>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-6">This page took a wrong turn</h1>
+            <p class="text-lg text-gray-400 leading-relaxed mb-10">
+                The page you're looking for doesn't exist or may have moved. Let's get you back to exploring
+                GeeksSpark's
+                web development solutions.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-14">
+                <a href="/"
+                    class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-xl shadow-lg shadow-primary-600/25 hover:shadow-primary-600/40 hover:-translate-y-0.5 transition-all">
+                    Back to Homepage
+                </a>
+                <a href="/#contact"
+                    class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/30 rounded-xl backdrop-blur-sm hover:-translate-y-0.5 transition-all">
+                    Contact Us
+                </a>
+            </div>
+
+            <div class="flex flex-wrap gap-3 justify-center text-sm">
+                <a href="/#solutions"
+                    class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Solutions</a>
+                <a href="/#portfolio"
+                    class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">Our
+                    Work</a>
+                <a href="/#about"
+                    class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">About</a>
+                <a href="/#faq"
+                    class="px-4 py-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">FAQ</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
